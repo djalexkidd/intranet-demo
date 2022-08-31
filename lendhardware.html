@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/newworker.css">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>Intranet Saint-James</title>
+</head>
+<body>
+    <!-- EN-TÊTE -->
+    <header>
+        <!--- Logo du site -->
+        <img class="logo" src="img/logo.png">
+        <!-- Barre de navigation -->
+        <nav>
+            <!-- Bouton hamburger pour les appareils mobiles -->
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+            <!-- Liens des pages -->
+            <div class="main_pages">
+                <a href="index.html">Accueil</a>
+                <a href="newworker.html">Formulaires</a>
+                <a href="list.html">Liste des téléphones</a>
+                <a href="jobs.html">Offres d'emploi</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="user-control">
+        <img class="svg-color" src="img/user.svg" />
+        <p>Version de démonstration</p>
+        <a class="logout" href="login.html">Déconnexion</a>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        <p><a class="otherlink" href="newworker.html">Nouveau salarié</a> / Prêt de matériel</p>
+        <div class="container">
+            <form action="">
+                <div class="option-component">
+                    <p class="mobile-shrink">Service:</p>
+                    <input name="service" required>
+                </div>
+
+                <div class="option-component">
+                    <p>Date début prêt:</p>
+                    <input type="date" name="lendDateStart" required>
+                </div>
+
+                <div class="option-component">
+                    <p>Date fin prêt:</p>
+                    <input type="date" name="lendDateEnd" required>
+                </div>
+
+                <div class="spacing"></div>
+
+                <div class="option-component">
+                    <input type="checkbox" name="needComputer" id="1">
+                    <label for="1">PC fixe</label>
+                </div>
+
+                <div class="option-component">
+                    <input type="checkbox" name="needPortableComputer" id="2">
+                    <label for="2">PC portable</label>
+                </div>
+
+                <div class="option-component">
+                    <input type="checkbox" name="needKBM" id="3">
+                    <label for="3">Clavier / Souris</label>
+                </div>
+
+                <div class="option-component">
+                    <input type="checkbox" name="needScreen" id="4">
+                    <label for="4">Écran</label>
+                </div>
+
+                <div class="option-component">
+                    <input type="checkbox" name="needHeadphones" id="5">
+                    <label for="5">Casque audio</label>
+                </div>
+
+                <div class="option-component">
+                    <input type="checkbox" name="needMobilePhone" id="6">
+                    <label for="6">Téléphone mobile</label>
+                </div>
+
+                <div class="spacing"></div>
+
+                <div class="option-component">
+                    <p>Commentaire:</p>
+                </div>
+
+                <textarea name="comment"></textarea>
+
+                <input class="sendform" type="submit" value="Envoyer" />
+            </form>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="js/spin.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Contenu principal de la page */
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 50px auto;
+}
+
+/* Tuile */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    background-color: #1b2f62;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(45, 45, 45);
+    position: relative;
+}
+
+.card:hover {
+    background-color: #3a5693;
+    cursor: pointer;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.card-value {
+    font-size: 32px;
+}
+
+.host-title {
+    font-size: 32px;
+}
+
+.host-status {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.host-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.status-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+@media (max-width: 1400px) {
+    main { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (max-width: 1200px) {
+    main { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Responsive pour la version mobile */
+@media all and (max-width: 991px)
+{
+    main {
+        margin-left: 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 90%;
+        border-radius: 0px;
+        margin: 0 auto;
+    }
+}

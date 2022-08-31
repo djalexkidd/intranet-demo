@@ -1,0 +1,68 @@
+main {
+    font-size: 32px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Boîte contenant le formulaire */
+.container {
+    display: flex;
+    width: 70%;
+    background-color: #1b2f62;
+    border-radius: 15px;
+    justify-content: center;
+    color: white;
+    margin: 20px auto;
+    font-size: 24px;
+}
+
+/* Bouton pour envoyer */
+.sendform {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 20px auto;
+}
+
+.option-component {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacing {
+    margin-bottom: 30px;
+}
+
+.hardware-lend {
+    display: none;
+}
+
+textarea {
+    height: 200px;
+}
+
+.otherlink:link, .otherlink:visited {
+    color: rgb(0, 115, 255);
+}
+
+/* Responsive pour la version mobile */
+@media all and (max-width: 991px)
+{
+    .container {
+        width: 90%;
+    }
+
+    .mobile-shrink {
+        font-size: 20px;
+    }
+}

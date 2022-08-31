@@ -1,0 +1,25 @@
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    margin: 0 auto;
+}
+  
+td, th {
+    border: 1px solid #004672;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #004672;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.search-bar {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
